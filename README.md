@@ -1,8 +1,8 @@
 # Little Sign website
 
 Public companion site for the Little Sign app, served by GitHub Pages at
-<https://minggamecn.github.io/little_sign-site/>. Plain HTML and CSS, no build step, no
-JavaScript framework, no external services.
+<https://minggamecn.github.io/little_sign-site/>. Plain HTML and CSS: no build step, no
+JavaScript framework, no external services, nothing to install.
 
 | Route | Page |
 | --- | --- |
@@ -20,6 +20,19 @@ The app itself, its Supabase functions and the product documentation live in the
 deletion backend, the manual request process, Google Play requirements, and the content review
 checklist.
 
+## Files
+
+```
+index.html            Deletion request, English (redirects Chinese-language browsers to zh/)
+zh/index.html         Deletion request, 简体中文
+privacy/  terms/  support/         English policy pages (one index.html each)
+zh/privacy/  zh/terms/  zh/support/  Chinese policy pages
+styles.css            Shared stylesheet
+icon.svg              Favicon
+404.html              Bilingual not-found page (served by GitHub for any unknown URL)
+.nojekyll             Tells GitHub Pages to serve the files as they are
+```
+
 ## Handling deletion requests
 
 Requests arrive at the support inbox shown on the page (ming.life@foxmail.com). The page and the
@@ -32,11 +45,18 @@ policies promise completion within 5 days of a verifiable request:
 
 ## Editing
 
-Each page is a self-contained HTML file; `styles.css` and `icon.svg` are shared. Every page
-exists once per language, so edit both the English file and its `zh/` counterpart, and keep the
-`<link rel="alternate" hreflang=…>` pairs pointing at each other. Links between pages are
-relative, so the site works under the repository path and under a custom domain alike. The
-`404.html` page uses absolute `/little_sign-site/` paths because GitHub serves it from any URL.
+Each page is a self-contained HTML file. Every page exists once per language, so edit both the
+English file and its `zh/` counterpart, and keep the `<link rel="alternate" hreflang=…>` pairs
+pointing at each other. Header, navigation and footer are repeated in every file; a navigation
+change means the same small edit in all eight pages.
+
+Links between pages are relative, so the site works under the repository path and under a
+custom domain alike. `404.html` is the exception: GitHub serves it from any URL, so it uses
+absolute `/little_sign-site/` paths.
+
+The English root page contains a three-line script that sends Chinese-language browsers to
+`zh/`. The "English" link on the Chinese page carries `?lang=en`, which the script honours, so
+a visitor can always switch back. Delete the script if you prefer no automatic redirect.
 
 The support address and the 5-day window appear in the request pages and in the privacy and
 support pages of both languages. Search for `ming.life@foxmail.com` and `5 days` / `5 天` when
@@ -48,22 +68,31 @@ Preview locally with any static server, for example:
 python3 -m http.server 3000     # http://localhost:3000/
 ```
 
-Reading the site in a browser is the whole check; there is nothing to compile or lint.
+Reading the pages in a browser is the whole check; there is nothing to compile or lint.
 
 ## Deploy
 
 GitHub Pages serves the `main` branch root directly (**Settings → Pages → Source: Deploy from a
-branch**). Every push is live within about a minute. The `.nojekyll` file keeps GitHub from
-running the Jekyll processor.
+branch**, branch `main`, folder `/`). Every push is live within about a minute; the run appears
+under the repository's Actions tab as "pages build and deployment".
 
 ### Custom domain
 
-To serve from a custom domain at `/`, add a `CNAME` file with the domain, update the canonical
-and alternate `<link>` URLs in every page, and change the absolute paths in `404.html`.
+To serve from a custom domain at `/`, add a `CNAME` file containing the domain, update the
+canonical and alternate `<link>` URLs at the top of every page, and change the absolute paths in
+`404.html`.
 
 ## Before publishing the policies
 
-The operator name and effective date are still blank. Each policy page carries a visible draft
-notice and a `noindex` robots tag with a comment marking it. Fill in the operator name, set the
-effective date, delete the notice and the tag in all six policy files, and confirm provider
-retention arrangements before submitting the URLs to Play Console.
+The operator name and effective date are still blank, so the six policy pages are marked as
+drafts. To finish them:
+
+1. Replace `[Operator name — to be added]` in the three English policy pages and
+   `[运营者名称 — 待填写]` in the three Chinese ones with the operator name used on the store
+   listing.
+2. Add the effective date next to the "Last updated" / "更新日期" line in each policy page.
+3. Delete the `<aside class="draft-notice">` block and the `<meta name="robots" content="noindex,
+   follow">` tag (marked with a comment) from all six policy files.
+4. Confirm the provider retention wording against the actual Supabase and DeepSeek arrangements.
+
+Then enter the privacy and deletion URLs in Play Console.
