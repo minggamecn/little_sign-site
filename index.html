@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request account deletion | Little Sign</title>
+  <meta name="description" content="Request permanent deletion of your Little Sign account by email, without reinstalling the app.">
+  <link rel="canonical" href="https://minggamecn.github.io/little_sign-site/">
+  <link rel="alternate" hreflang="en" href="https://minggamecn.github.io/little_sign-site/">
+  <link rel="alternate" hreflang="zh-CN" href="https://minggamecn.github.io/little_sign-site/zh/">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Chinese-language browsers open the Chinese request page unless English was chosen explicitly.
+    if (/^zh\b/i.test(navigator.language) && !/[?&]lang=en\b/.test(location.search)) location.replace('zh/');
+  </script>
+</head>
+<body>
+<main>
+  <header><span>Little Sign</span><a class="language" lang="zh-CN" href="zh/">简体中文</a></header>
+  <nav aria-label="Policies and support" class="site-links"><a href="privacy/">Privacy policy</a><a href="terms/">Terms of service</a><a href="support/">Support</a><a aria-current="page" href="./">Delete account</a></nav>
+  <article>
+    <p class="eyebrow">ACCOUNT &amp; DATA</p>
+    <h1>Request deletion of your Little Sign account</h1>
+    <p class="intro">You can request deletion here by email without installing the app. Deletion is permanent.</p>
+    <p>Fastest route: in the app, open Settings → Delete my account. After email verification the account is deleted immediately.</p>
+    <section aria-labelledby="deletion-details">
+      <h2 id="deletion-details">What deletion means</h2>
+      <p>Your account, sign-in sessions and account-linked service records are permanently deleted.</p>
+      <p>Cards and notes are stored on your devices. Deletion cannot erase those local copies. Use “Clear my data on this device” in Little Sign on each device to remove them.</p>
+    </section>
+    <section aria-labelledby="deletion-how">
+      <h2 id="deletion-how">How to request deletion by email</h2>
+      <ol>
+        <li>Send an email from the address you use to sign in to Little Sign to <a href="mailto:ming.life@foxmail.com">ming.life@foxmail.com</a> with the subject <strong>“Delete my Little Sign account”</strong>.</li>
+        <li>We verify ownership by the sending address and may reply to confirm the request. We never ask for a verification code or password.</li>
+        <li>We delete the account and its account-linked service records within 5 days of receiving a verifiable request, then reply to confirm. This cannot be undone.</li>
+      </ol>
+      <p class="form-area"><a class="button" href="mailto:ming.life@foxmail.com?subject=Delete%20my%20Little%20Sign%20account&amp;body=Please%20permanently%20delete%20my%20Little%20Sign%20account.%0AAccount%20email%3A%20(the%20address%20you%20sign%20in%20with%20%E2%80%94%20send%20this%20message%20from%20that%20address)%0A">Open my email app with the request</a></p>
+      <p>If the button does not open an email app, copy this message:</p>
+      <pre class="template">Delete my Little Sign account
+
+Please permanently delete my Little Sign account.
+Account email: (the address you sign in with — send this message from that address)
+</pre>
+      <p class="warning">If you can no longer send from the account address, explain this in your message. We need to establish ownership and cannot delete an account based only on an address someone else supplies.</p>
+    </section>
+    <footer>
+      <nav aria-label="Policies and support" class="site-links"><a href="privacy/">Privacy policy</a><a href="terms/">Terms of service</a><a href="support/">Support</a><a aria-current="page" href="./">Delete account</a></nav>
+      <p>Deletion removes active account records. Security logs and backups may remain under the hosting and AI providers’ retention rules. No new account record is retained to track this deletion.</p>
+      <p>Provider retention information: <a href="https://supabase.com/privacy">Supabase</a> · <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek</a></p>
+    </footer>
+  </article>
+</main>
+</body>
+</html>
