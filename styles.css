@@ -46,3 +46,61 @@ a { color: #d0c1a7; }
 a.button { display: inline-block; min-height: 3rem; padding: .75rem 1.25rem; border-radius: .5rem; color: #0b1026; background: #d0c1a7; font: 600 1rem/1.5 system-ui, sans-serif; text-decoration: none; }
 pre.template { white-space: pre-wrap; padding: 1rem; border: 1px solid #343d60; border-radius: .5rem; background: #141a36; font: .95rem/1.5 ui-monospace, monospace; user-select: all; }
 ol { padding-left: 1.25rem; } ol li { margin: .5rem 0; }
+
+/* Homepage: the app's midnight palette and original tarot artwork. */
+.home-shell { max-width: 76rem; margin: auto; padding: 2rem 3rem; }
+.home-header { padding-bottom: 1.25rem; }
+.home-header .brand { font-size: 1.75rem; }
+.home-nav { gap: .4rem 1.75rem; }
+.home-nav a { text-decoration: none; }
+.home-nav a:hover, .quiet-link:hover { color: #fff; text-decoration: underline; }
+.home-main { max-width: none; padding: 0; }
+.home-main section { margin: 0; border: 0; }
+.home-main .home-hero { display: grid; grid-template-columns: 1.35fr 1fr; align-items: center; gap: 4rem; padding: 3rem 0 4.5rem; }
+.hero-copy h1 { font-size: clamp(2.6rem, 4.6vw, 4rem); line-height: 1.12; margin: 1.4rem 0 1.75rem; letter-spacing: -.035em; }
+:lang(zh-CN) .hero-copy h1 { font-family: Georgia, 'Songti SC', 'Noto Serif CJK SC', serif; line-height: 1.4; font-size: clamp(2rem, 3.8vw, 3.25rem); letter-spacing: 0; }
+.hero-copy .intro { max-width: 29rem; font-size: 1.125rem; line-height: 1.8; }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.75rem; margin-top: 2rem; }
+.hero-actions .button { border: 1px solid #d0c1a7; border-radius: .25rem; }
+.hero-actions .button:hover { background: #e8dcc7; }
+.quiet-link { padding: .75rem 0; text-underline-offset: .3em; }
+.hero-art { margin: 0; width: min(100%, 21rem); justify-self: center; }
+.hero-art img { display: block; width: 100%; height: auto; border-radius: .65rem; box-shadow: 0 1.5rem 4rem #0005; }
+.hero-art figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .4rem 1rem; margin-top: 1rem; color: #b6b7c5; font-size: .875rem; }
+.hero-art figcaption span:first-child { letter-spacing: .1em; color: #d0c1a7; }
+.home-main .home-about { padding: 3rem 0; border-top: 1px solid #343d60; scroll-margin-top: 1.5rem; }
+.home-main h2 { font: 2rem/1.35 Georgia, 'Songti SC', serif; margin: 0 0 1.5rem; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
+.feature h3, .resource-link h3 { font-size: 1.125rem; line-height: 1.5; margin: .75rem 0; font-weight: 600; }
+.feature > p:last-child, .resource-link p { color: #b6b7c5; }
+.feature .eyebrow { margin-top: 1rem; }
+.offline-note { color: #b6b7c5; margin-top: 2rem; padding-left: 1rem; border-left: 2px solid #d0c1a7; }
+.home-main .home-resources { padding: 3rem 0 4rem; border-top: 1px solid #343d60; }
+.home-resources h2 { margin-bottom: .5rem; }
+.resource-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+.resource-link { display: flex; justify-content: space-between; gap: 1.5rem; padding: 1.5rem; background: #141a36; border: 1px solid #343d60; border-radius: .4rem; text-decoration: none; }
+.resource-link h3 { margin-top: 0; color: #f1eadf; }
+.resource-link p { margin-bottom: 0; }
+.resource-link > span { font-size: 1.4rem; }
+.resource-link:hover { background: #1d2547; border-color: #d0c1a7; }
+.home-footer { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem 2rem; padding-block: 2rem 1rem; }
+.home-footer .site-links { font-size: .875rem; padding: 0; }
+.skip-link { position: absolute; top: -10rem; left: 1rem; padding: .75rem 1rem; background: #f1eadf; color: #0b1026; z-index: 2; }
+.skip-link:focus { top: 1rem; }
+@media (max-width: 55rem) {
+  .home-shell { padding: 1.5rem; }
+  .home-main .home-hero { gap: 2rem; }
+  .feature-grid { gap: 1.5rem; }
+}
+@media (max-width: 40rem) {
+  .home-shell { padding: 1.25rem; }
+  .home-nav { gap: .25rem 1.25rem; }
+  .home-main .home-hero { grid-template-columns: 1fr; gap: 3rem; padding: 2rem 0 3rem; }
+  .hero-copy h1 { font-size: 2.75rem; }
+  .hero-art { width: min(80%, 19rem); }
+  .feature-grid, .resource-grid { grid-template-columns: 1fr; }
+  .feature-grid { gap: .75rem; }
+  .home-main h2 { font-size: 1.75rem; }
+  .home-main .home-about, .home-main .home-resources { padding-block: 2.5rem; }
+  .home-footer { padding-top: 1.5rem; }
+}

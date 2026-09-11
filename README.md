@@ -6,7 +6,8 @@ JavaScript framework, no external services, nothing to install.
 
 | Route | Page |
 | --- | --- |
-| `/`, `/zh/` | Account deletion request (email instructions with a prefilled `mailto:` link) |
+| `/`, `/zh/` | Homepage: app introduction and links to every companion page |
+| `/delete-account/`, `/zh/delete-account/` | Account deletion request (email instructions with a prefilled `mailto:` link) |
 | `/privacy/`, `/zh/privacy/` | Privacy policy (English / 简体中文) |
 | `/terms/`, `/zh/terms/` | Terms of service |
 | `/support/`, `/zh/support/` | Support |
@@ -23,8 +24,11 @@ checklist.
 ## Files
 
 ```
-index.html            Deletion request, English (redirects Chinese-language browsers to zh/)
-zh/index.html         Deletion request, 简体中文
+index.html            Homepage, English (redirects Chinese-language browsers to zh/)
+zh/index.html         Homepage, 简体中文
+delete-account/      Account deletion request, English
+zh/delete-account/   Account deletion request, 简体中文
+assets/star.jpg       Original Star card artwork from the app
 privacy/  terms/  support/         English policy pages (one index.html each)
 zh/privacy/  zh/terms/  zh/support/  Chinese policy pages
 styles.css            Shared stylesheet
@@ -48,7 +52,7 @@ policies promise completion within 5 days of a verifiable request:
 Each page is a self-contained HTML file. Every page exists once per language, so edit both the
 English file and its `zh/` counterpart, and keep the `<link rel="alternate" hreflang=…>` pairs
 pointing at each other. Header, navigation and footer are repeated in every file; a navigation
-change means the same small edit in all eight pages.
+change means the same small edit in all ten content pages.
 
 Links between pages are relative, so the site works under the repository path and under a
 custom domain alike. `404.html` is the exception: GitHub serves it from any URL, so it uses
@@ -56,7 +60,8 @@ absolute `/little_sign-site/` paths.
 
 The English root page contains a three-line script that sends Chinese-language browsers to
 `zh/`. The "English" link on the Chinese page carries `?lang=en`, which the script honours, so
-a visitor can always switch back. Delete the script if you prefer no automatic redirect.
+a visitor can always switch back. English home links also carry `?lang=en`;
+Chinese pages link back to the Chinese homepage. Other routes stay in the language selected. Delete the script if you prefer no automatic redirect.
 
 The support address and the 5-day window appear in the request pages and in the privacy and
 support pages of both languages. Search for `ming.life@foxmail.com` and `5 days` / `5 天` when
@@ -95,4 +100,8 @@ drafts. To finish them:
    follow">` tag (marked with a comment) from all six policy files.
 4. Confirm the provider retention wording against the actual Supabase and DeepSeek arrangements.
 
-Then enter the privacy and deletion URLs in Play Console.
+Then enter the privacy and deletion URLs in Play Console. Use
+`https://minggamecn.github.io/little_sign-site/delete-account/` for account deletion
+(or `/zh/delete-account/` for Chinese). The former deletion URLs `/` and `/zh/`
+now show the homepage with a clearly labeled deletion link. Update any store
+listing or app configuration that should open the deletion instructions directly.
