@@ -2,10 +2,12 @@
 export const siteConfig = {
   appName: 'Little Sign',
   operatorName: '',
-  supportEmail: '',
+  supportEmail: 'ming.life@foxmail.com',
+  // Working days within which a verifiable email deletion request is completed.
+  deletionResponseDays: 5,
   // Set the effective date after reviewing the final policies and live services.
   effectiveDate: '',
-  updatedDate: '2026-09-10',
+  updatedDate: '2026-09-11',
   origin: 'https://minggamecn.github.io/little_sign-site',
 };
 export const policiesAreDraft = !siteConfig.operatorName || !siteConfig.supportEmail || !siteConfig.effectiveDate;

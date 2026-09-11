@@ -33,12 +33,6 @@ jobs:
           # Project site: https://minggamecn.github.io/little_sign-site/
           # Remove this variable when serving from a custom domain root.
           NEXT_PUBLIC_BASE_PATH: /little_sign-site
-          # Public Supabase values (safe for the browser bundle). Set both as
-          # repository Actions *variables*: Settings -> Secrets and variables ->
-          # Actions -> Variables. Without them the deletion form shows
-          # "not available yet" while the policy pages still render.
-          NEXT_PUBLIC_SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ vars.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

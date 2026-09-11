@@ -43,3 +43,6 @@ a { color: #d0c1a7; }
 .contents li { margin-block: .5rem; }
 .draft-notice { padding: 1rem; background: #241e32; border: 1px solid #c5a774; color: #f5dcaa; border-radius: .5rem; }
 .pending-detail { color: #f5dcaa; }
+a.button { display: inline-block; min-height: 3rem; padding: .75rem 1.25rem; border-radius: .5rem; color: #0b1026; background: #d0c1a7; font: 600 1rem/1.5 system-ui, sans-serif; text-decoration: none; }
+pre.template { white-space: pre-wrap; padding: 1rem; border: 1px solid #343d60; border-radius: .5rem; background: #141a36; font: .95rem/1.5 ui-monospace, monospace; user-select: all; }
+ol { padding-left: 1.25rem; } ol li { margin: .5rem 0; }

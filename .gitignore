@@ -7,9 +7,6 @@
 *.tsbuildinfo
 next-env.d.ts
 
-# local environment (public Supabase URL + anon key for local dev)
-.env*
-!.env.example
 
 # misc
 .DS_Store
