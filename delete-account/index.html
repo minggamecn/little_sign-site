@@ -11,19 +11,24 @@
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-<main>
-  <header><a class="brand" href="../?lang=en">Little Sign</a><a class="language" lang="zh-CN" href="../zh/delete-account/">简体中文</a></header>
-  <nav aria-label="Policies and support" class="site-links"><a href="../?lang=en">Home</a><a href="../privacy/">Privacy policy</a><a href="../terms/">Terms of service</a><a href="../support/">Support</a><a aria-current="page" href="./">Delete account</a></nav>
-  <article>
+<body class="document-page">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="page-shell" id="top">
+  <header class="page-header"><a class="brand" href="../?lang=en">Little Sign</a><a class="language" lang="zh-CN" href="../zh/delete-account/">简体中文</a></header>
+  <nav aria-label="Main navigation" class="site-links page-nav"><a href="../?lang=en">Home</a><a href="../support/">Support</a><a href="../privacy/">Privacy policy</a><a href="../terms/">Terms of service</a></nav>
+  <main id="main-content" tabindex="-1" aria-labelledby="page-title" class="document-layout">
+    <div class="page-heading">
     <p class="eyebrow">ACCOUNT &amp; DATA</p>
-    <h1>Request deletion of your Little Sign account</h1>
+    <h1 id="page-title">Delete your account</h1>
     <p class="intro">You can request deletion here by email without installing the app. Deletion is permanent.</p>
-    <p>Fastest route: in the app, open Settings → Delete my account. After email verification the account is deleted immediately.</p>
+    <p class="info-note">Fastest route: in the app, open Settings → Delete my account. After you verify your email and confirm deletion, the account is deleted immediately.</p>
+    </div>
+    <nav class="contents" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#deletion-details">What deletion means</a></li><li><a href="#deletion-how">Request by email</a></li><li><a href="#retention-notes">Logs and backups</a></li></ol></nav>
+    <div class="document-body">
     <section aria-labelledby="deletion-details">
       <h2 id="deletion-details">What deletion means</h2>
       <p>Your account, sign-in sessions and account-linked service records are permanently deleted.</p>
-      <p>Cards and notes are stored on your devices. Deletion cannot erase those local copies. Use “Clear my data on this device” in Little Sign on each device to remove them.</p>
+      <p>Cards and notes are stored on your devices. Deletion by email does not erase those local copies. In-app deletion also removes identifiable AI history for the account on that device; other local records and copies on other devices remain. Use “Clear my data on this device” in Little Sign on each device to remove them.</p>
     </section>
     <section aria-labelledby="deletion-how">
       <h2 id="deletion-how">How to request deletion by email</h2>
@@ -41,12 +46,17 @@ Account email: (the address you sign in with — send this message from that add
 </pre>
       <p class="warning">If you can no longer send from the account address, explain this in your message. We need to establish ownership and cannot delete an account based only on an address someone else supplies.</p>
     </section>
-    <footer>
-      <nav aria-label="Policies and support" class="site-links"><a href="../?lang=en">Home</a><a href="../privacy/">Privacy policy</a><a href="../terms/">Terms of service</a><a href="../support/">Support</a><a aria-current="page" href="./">Delete account</a></nav>
+    <section aria-labelledby="retention-notes">
+      <h2 id="retention-notes">Logs and backups</h2>
       <p>Deletion removes active account records. Security logs and backups may remain under the hosting and AI providers’ retention rules. No new account record is retained to track this deletion.</p>
       <p>Provider retention information: <a href="https://supabase.com/privacy">Supabase</a> · <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek</a></p>
-    </footer>
-  </article>
-</main>
+    </section>
+    </div>
+  </main>
+  <footer class="page-footer"><a class="brand" href="../?lang=en">Little Sign</a>
+    <nav aria-label="Related pages" class="site-links"><a href="../?lang=en">Home</a><a href="../support/">Support</a><a href="../privacy/">Privacy policy</a><a href="../terms/">Terms of service</a><a aria-current="page" href="../delete-account/">Delete account</a></nav>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </footer>
+</div>
 </body>
 </html>

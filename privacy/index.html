@@ -13,17 +13,19 @@
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-<main id="main-content">
-  <header><a class="brand" href="../?lang=en">Little Sign</a><a class="language" lang="zh-CN" href="../zh/privacy/">简体中文</a></header>
-  <nav aria-label="Policies and support" class="site-links"><a href="../?lang=en">Home</a><a aria-current="page" href="../privacy/">Privacy policy</a><a href="../terms/">Terms of service</a><a href="../support/">Support</a><a href="../delete-account/">Delete account</a></nav>
-  <article class="policy">
-    <p class="eyebrow">Little Sign</p>
-    <h1>Privacy policy</h1>
+<body class="document-page">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="page-shell" id="top">
+  <header class="page-header"><a class="brand" href="../?lang=en">Little Sign</a><a class="language" lang="zh-CN" href="../zh/privacy/">简体中文</a></header>
+  <nav aria-label="Main navigation" class="site-links page-nav"><a href="../?lang=en">Home</a><a href="../support/">Support</a><a aria-current="page" href="../privacy/">Privacy policy</a><a href="../terms/">Terms of service</a></nav>
+  <main id="main-content" tabindex="-1" aria-labelledby="page-title" class="document-layout">
+    <div class="page-heading">
+    <p class="eyebrow">POLICIES &amp; TERMS</p>
+    <h1 id="page-title">Privacy policy</h1>
     <p class="intro">This policy explains how the Little Sign app and its companion website handle your information, and how you can manage or delete it.</p>
-    <p class="policy-date">Last updated: 2026-09-11</p>
-    <aside class="draft-notice" aria-label="Draft notice">Pre-publication draft: operator, contact email, and effective date are still to be supplied; provider retention arrangements remain to be confirmed.
-    </aside>
+    <p class="policy-date">Last updated: <time datetime="2026-09-11">2026-09-11</time></p>
+    <aside class="draft-notice" aria-label="Draft notice">Draft: operator details and the effective date are pending confirmation. Provider retention arrangements are still under review.</aside>
+    </div>
     <nav class="contents" aria-label="On this page">
       <h2>On this page</h2>
       <ol>
@@ -38,6 +40,7 @@
         <li><a href="#children-changes">9. Children and policy updates</a></li>
       </ol>
     </nav>
+    <div class="document-body">
     <section id="operator" aria-labelledby="operator-title">
       <h2 id="operator-title">1. Operator and contact</h2>
       <p>Little Sign is operated by [Operator name — to be added].</p>
@@ -76,7 +79,7 @@
       <ul>
         <li>Local records remain until you delete them or use Settings → Clear my data on this device. Uninstalling, losing, or resetting a device can also cause data loss; exported images and other copies must be deleted separately.</li>
         <li>Account records remain until you delete the account. Use Settings → Delete my account in the app, or email a request as described on the <a href="../delete-account/">account deletion page</a>. In-app deletion runs immediately after verification and confirmation; an email request is verified by the sending address and completed within 5 days of a verifiable request, with a confirmation reply. Both remove the account, linked sign-in records, per-account usage counts, and other linked records covered by the deployed data relationships. Signing out or clearing this device does not delete the account.</li>
-        <li>Deleting an account from the app removes identifiable AI history belonging to that account on that device. Guest records, older unowned records, and other accounts’ records remain. We cannot erase local copies on any device; clear data on each device separately.</li>
+        <li>Deleting an account from the app removes identifiable AI history belonging to that account on that device. Guest records, older unowned records, and other accounts’ records remain. An email deletion request does not erase device data, and in-app deletion does not clear other devices. Clear any remaining local data on each device separately.</li>
         <li>Usage counts reset on a request on a new day; successful request processing removes counts older than two calendar days. Cleanup is request-triggered, not a timed guarantee. Account deletion removes its count; the global count without account identifiers remains.</li>
         <li>Provider logs, backups, and submitted AI text may remain under applicable agreements for security, abuse prevention, service operation, or legal obligations. Immediate account deletion does not guarantee erasure of those copies. Contact us below for the retention periods applicable to your request or deletion assistance. We create no new server account record to track deletion.</li>
       </ul>
@@ -92,11 +95,12 @@
       <p>Little Sign offers everyday reflection and is not directed at children. If you believe a child has supplied personal information, contact the operator so we can investigate and handle it under applicable law.</p>
       <p>This page shows its update date. Material changes to data handling will be communicated through the app or another appropriate channel; consent will be requested separately where required.</p>
     </section>
-  </article>
-  <footer>
-    <nav aria-label="Policies and support" class="site-links"><a href="../?lang=en">Home</a><a aria-current="page" href="../privacy/">Privacy policy</a><a href="../terms/">Terms of service</a><a href="../support/">Support</a><a href="../delete-account/">Delete account</a></nav>
-    <p>Little Sign</p>
+    </div>
+  </main>
+  <footer class="page-footer"><a class="brand" href="../?lang=en">Little Sign</a>
+    <nav aria-label="Related pages" class="site-links"><a href="../?lang=en">Home</a><a href="../support/">Support</a><a aria-current="page" href="../privacy/">Privacy policy</a><a href="../terms/">Terms of service</a><a href="../delete-account/">Delete account</a></nav>
+    <a class="back-top" href="#top">Back to top ↑</a>
   </footer>
-</main>
+</div>
 </body>
 </html>

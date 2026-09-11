@@ -73,7 +73,11 @@ Preview locally with any static server, for example:
 python3 -m http.server 3000     # http://localhost:3000/
 ```
 
-Reading the pages in a browser is the whole check; there is nothing to compile or lint.
+There is nothing to compile or lint. Check local links and anchors, language switches,
+and navigation under the `/little_sign-site/` path. When reviewing layout, check a desktop
+and narrow mobile viewport, plus enlarged text. Policy pages use a sticky contents sidebar
+on desktop and a single column on mobile; the support email appears before the contents.
+The 404 page must be previewed under `/little_sign-site/` because its links are absolute.
 
 ## Deploy
 
@@ -89,13 +93,14 @@ canonical and alternate `<link>` URLs at the top of every page, and change the a
 
 ## Before publishing the policies
 
-The operator name and effective date are still blank, so the six policy pages are marked as
-drafts. To finish them:
+The privacy policy and terms still need an operator name and effective date. Those four
+pages are marked as drafts; both support pages retain a review notice and `noindex` until
+the policy review is complete. The displayed update date is separate from the effective date. To finish them:
 
 1. Replace `[Operator name — to be added]` in the English privacy and terms pages and
    `[运营者名称 — 待填写]` in the Chinese ones with the operator name used on the store listing.
    The support pages do not name the operator.
-2. Add the effective date next to the "Last updated" / "更新日期" line in each policy page.
+2. Add the effective date next to the "Last updated" / "更新日期" line in the privacy and terms pages.
 3. Delete the `<aside class="draft-notice">` block and the `<meta name="robots" content="noindex,
    follow">` tag (marked with a comment) from all six policy files.
 4. Confirm the provider retention wording against the actual Supabase and DeepSeek arrangements.

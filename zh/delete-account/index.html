@@ -11,19 +11,24 @@
   <link rel="icon" href="../../icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../styles.css">
 </head>
-<body>
-<main>
-  <header><a class="brand" href="../">Little Sign</a><a class="language" lang="en" href="../../delete-account/?lang=en">English</a></header>
-  <nav aria-label="政策与帮助" class="site-links"><a href="../">首页</a><a href="../privacy/">隐私政策</a><a href="../terms/">服务条款</a><a href="../support/">帮助与联系</a><a aria-current="page" href="./">删除账号</a></nav>
-  <article>
+<body class="document-page">
+<a class="skip-link" href="#main-content">跳到正文</a>
+<div class="page-shell" id="top">
+  <header class="page-header"><a class="brand" href="../">Little Sign</a><a class="language" lang="en" href="../../delete-account/?lang=en">English</a></header>
+  <nav aria-label="主导航" class="site-links page-nav"><a href="../">首页</a><a href="../support/">帮助与联系</a><a href="../privacy/">隐私政策</a><a href="../terms/">服务条款</a></nav>
+  <main id="main-content" tabindex="-1" aria-labelledby="page-title" class="document-layout">
+    <div class="page-heading">
     <p class="eyebrow">账号与数据</p>
-    <h1>申请删除你的 Little Sign 账号</h1>
+    <h1 id="page-title">申请删除账号</h1>
     <p class="intro">无需安装应用，你可以在这里通过邮件申请删除账号。删除后无法恢复。</p>
-    <p>最快的方式：在应用中打开“设置 → 删除账号”，验证邮箱后立即删除。</p>
+    <p class="info-note">最快的方式：在应用中打开“设置 → 删除账号”，验证邮箱并确认删除后，账号会立即删除。</p>
+    </div>
+    <nav class="contents" aria-label="本页内容"><h2>本页内容</h2><ol><li><a href="#deletion-details">删除范围</a></li><li><a href="#deletion-how">通过邮件申请</a></li><li><a href="#retention-notes">日志与备份</a></li></ol></nav>
+    <div class="document-body">
     <section aria-labelledby="deletion-details">
       <h2 id="deletion-details">删除的范围</h2>
       <p>你的账号、登录状态和账号相关的服务记录将被永久删除。</p>
-      <p>卡牌和笔记保存在你的设备上，删除账号无法清除这些本地副本。请在每台设备的 Little Sign 中使用“清除本机数据”移除它们。</p>
+      <p>卡牌和笔记保存在你的设备上，邮件申请删除不会清除这些本地副本。应用内删除还会移除当前设备上可识别为属于该账号的 AI 历史；其他本地记录及其他设备上的副本仍会保留。请在每台设备的 Little Sign 中使用“清除本机数据”移除它们。</p>
     </section>
     <section aria-labelledby="deletion-how">
       <h2 id="deletion-how">如何通过邮件申请删除</h2>
@@ -41,12 +46,17 @@
 </pre>
       <p class="warning">如果你已无法使用该账号邮箱发信，请在邮件中说明。我们需要确认账号归属，不能仅凭他人提供的邮箱地址删除账号。</p>
     </section>
-    <footer>
-      <nav aria-label="政策与帮助" class="site-links"><a href="../">首页</a><a href="../privacy/">隐私政策</a><a href="../terms/">服务条款</a><a href="../support/">帮助与联系</a><a aria-current="page" href="./">删除账号</a></nav>
+    <section aria-labelledby="retention-notes">
+      <h2 id="retention-notes">日志与备份</h2>
       <p>删除会移除正在使用的账号记录。安全日志和备份可能按托管与 AI 服务商的规则继续保存。我们不会另外保留账号记录来跟踪这次删除。</p>
-      <p>服务商保留规则: <a href="https://supabase.com/privacy">Supabase</a> · <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek</a></p>
-    </footer>
-  </article>
-</main>
+      <p>服务商保留规则： <a href="https://supabase.com/privacy">Supabase</a> · <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek</a></p>
+    </section>
+    </div>
+  </main>
+  <footer class="page-footer"><a class="brand" href="../">Little Sign</a>
+    <nav aria-label="相关页面" class="site-links"><a href="../">首页</a><a href="../support/">帮助与联系</a><a href="../privacy/">隐私政策</a><a href="../terms/">服务条款</a><a aria-current="page" href="../delete-account/">删除账号</a></nav>
+    <a class="back-top" href="#top">返回顶部 ↑</a>
+  </footer>
+</div>
 </body>
 </html>
