@@ -87,9 +87,9 @@ canonical and alternate `<link>` URLs at the top of every page, and change the a
 The operator name and effective date are still blank, so the six policy pages are marked as
 drafts. To finish them:
 
-1. Replace `[Operator name — to be added]` in the three English policy pages and
-   `[运营者名称 — 待填写]` in the three Chinese ones with the operator name used on the store
-   listing.
+1. Replace `[Operator name — to be added]` in the English privacy and terms pages and
+   `[运营者名称 — 待填写]` in the Chinese ones with the operator name used on the store listing.
+   The support pages do not name the operator.
 2. Add the effective date next to the "Last updated" / "更新日期" line in each policy page.
 3. Delete the `<aside class="draft-notice">` block and the `<meta name="robots" content="noindex,
    follow">` tag (marked with a comment) from all six policy files.
