@@ -136,7 +136,7 @@ ol { padding-left: 1.25rem; } ol li { margin: .5rem 0; }
 .hero-art figcaption span:first-child { letter-spacing: .1em; color: #d0c1a7; }
 .home-main .home-about { padding: 3rem 0; border-top: 1px solid #343d60; scroll-margin-top: 1.5rem; }
 .home-main h2 { font: 2rem/1.35 Georgia, 'Songti SC', serif; margin: 0 0 1.5rem; }
-.feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 2.5rem; }
 .feature h3, .resource-link h3 { font-size: 1.125rem; line-height: 1.5; margin: .75rem 0; font-weight: 600; }
 .feature > p:last-child, .resource-link p { color: #b6b7c5; }
 .feature .eyebrow { margin-top: 1rem; }
