@@ -91,21 +91,21 @@ To serve from a custom domain at `/`, add a `CNAME` file containing the domain, 
 canonical and alternate `<link>` URLs at the top of every page, and change the absolute paths in
 `404.html`.
 
-## Before publishing the policies
+## Policy status
 
-The privacy policy and terms still need an operator name and effective date. Those four
-pages are marked as drafts; both support pages retain a review notice and `noindex` until
-the policy review is complete. The displayed update date is separate from the effective date. To finish them:
+The privacy policy and terms were finalised on 2026-09-26: the operator is named as
+Ming Zhu (the individual Play developer account), both pages carry an effective date
+next to the update date, and the draft notices and `noindex` tags are gone from all
+six policy files. The same edit added sparks (reading credits and the Google Play
+50-spark pack) to the privacy policy (section 3, providers and retention), the terms
+(section 6) and the support page. The support pages do not name the operator.
 
-1. Replace `[Operator name — to be added]` in the English privacy and terms pages and
-   `[运营者名称 — 待填写]` in the Chinese ones with the operator name used on the store listing.
-   The support pages do not name the operator.
-2. Add the effective date next to the "Last updated" / "更新日期" line in the privacy and terms pages.
-3. Delete the `<aside class="draft-notice">` block and the `<meta name="robots" content="noindex,
-   follow">` tag (marked with a comment) from all six policy files.
-4. Confirm the provider retention wording against the actual Supabase and DeepSeek arrangements.
+When the policies change again, update the "Last updated" / "更新日期" date in both
+languages; move the effective date only when the change alters what readers agree to.
+The provider retention wording still promises nothing about Supabase or DeepSeek
+retention; confirm the actual arrangements before promising more.
 
-Then enter the privacy and deletion URLs in Play Console. Use
+Enter the privacy and deletion URLs in Play Console. Use
 `https://minggamecn.github.io/little_sign-site/delete-account/` for account deletion
 (or `/zh/delete-account/` for Chinese). The former deletion URLs `/` and `/zh/`
 now show the homepage with a clearly labeled deletion link. Update any store

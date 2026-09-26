@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy policy | Little Sign</title>
   <meta name="description" content="This policy explains how the Little Sign app and its companion website handle your information, and how you can manage or delete it.">
-  <!-- Draft policy: remove this tag when the operator name and effective date are final. -->
-  <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://minggamecn.github.io/little_sign-site/privacy/">
   <link rel="alternate" hreflang="en" href="https://minggamecn.github.io/little_sign-site/privacy/">
   <link rel="alternate" hreflang="zh-CN" href="https://minggamecn.github.io/little_sign-site/zh/privacy/">
@@ -23,15 +21,14 @@
     <p class="eyebrow">POLICIES &amp; TERMS</p>
     <h1 id="page-title">Privacy policy</h1>
     <p class="intro">This policy explains how the Little Sign app and its companion website handle your information, and how you can manage or delete it.</p>
-    <p class="policy-date">Last updated: <time datetime="2026-09-25">2026-09-25</time></p>
-    <aside class="draft-notice" aria-label="Draft notice">Draft: operator details and the effective date are pending confirmation. Provider retention arrangements are still under review.</aside>
+    <p class="policy-date">Effective: <time datetime="2026-09-26">2026-09-26</time> · Last updated: <time datetime="2026-09-26">2026-09-26</time></p>
     </div>
     <nav class="contents" aria-label="On this page">
       <h2>On this page</h2>
       <ol>
         <li><a href="#operator">1. Operator and contact</a></li>
         <li><a href="#device">2. Information on your device</a></li>
-        <li><a href="#accounts">3. Email accounts and service records</a></li>
+        <li><a href="#accounts">3. Email accounts, sparks, and service records</a></li>
         <li><a href="#ai">4. Optional AI questions</a></li>
         <li><a href="#sharing">5. Sharing, photos, and device permissions</a></li>
         <li><a href="#providers">6. Providers, website, and network information</a></li>
@@ -43,7 +40,7 @@
     <div class="document-body">
     <section id="operator" aria-labelledby="operator-title">
       <h2 id="operator-title">1. Operator and contact</h2>
-      <p>Little Sign is operated by [Operator name — to be added].</p>
+      <p>Little Sign is operated by Ming Zhu, an individual developer, who is responsible for the processing described in this policy.</p>
       <p>For privacy questions, data requests, or concerns about children’s information, contact: <a href="mailto:ming.life@foxmail.com">ming.life@foxmail.com</a>.</p>
     </section>
     <section id="device" aria-labelledby="device-title">
@@ -52,9 +49,11 @@
       <p>These local records do not automatically sync to our servers. The current release has no cloud journal backup. We do not use advertising or analytics SDKs to upload these records. Signing out does not erase device data.</p>
     </section>
     <section id="accounts" aria-labelledby="accounts-title">
-      <h2 id="accounts-title">3. Email accounts and service records</h2>
+      <h2 id="accounts-title">3. Email accounts, sparks, and service records</h2>
       <p>When you register or sign in, Supabase and the verification-email delivery service process your email address, your password (stored by Supabase only in hashed form), confirmation and password-reset codes, account identifier, and sign-in sessions to verify identity and provide account features. Sign-in sessions are stored on your device; passwords and codes are not saved in your journal or on your device.</p>
       <p>We keep an account-linked AI request date and count on the server to enforce usage limits and control abuse. Those counters do not contain your question, answer, or notes. If you report a generated reading from inside the app, that report is stored on our service linked to your account, as described in section 4.</p>
+      <p>Readings written by Little Sign use sparks, a reading credit tied to your account. Our service keeps your spark balance and a ledger of every change: the welcome grant, the daily spark for a completed Today draw, the sparks reserved and charged for each reading, purchased packs, and refunds, each with an amount and a time. To claim the daily spark, the app sends your account identifier and the local date of the draw; the card you drew is not sent. A reading request records the account identifier, the amount, and a reservation identifier. The wallet never receives your question, cards, or notes.</p>
+      <p>If a spark pack is on sale and you buy one, Google Play handles the payment under Google’s own terms and privacy policy; we never receive your payment card details. The app then sends the Google Play purchase token and product identifier to our service, which confirms the purchase with Google and checks that it carries a one-way hash of your account identifier set by the app when the purchase started. We store the purchase token, Google order identifier, product, spark amount, and purchase time against your account so that each purchase is credited once and can be reversed if Google refunds or voids it. A daily check reads Google’s list of voided purchases for this app. No question, card, note, or email address is involved in any of this.</p>
     </section>
     <section id="ai" aria-labelledby="ai-title">
       <h2 id="ai-title">4. Optional AI questions</h2>
@@ -70,9 +69,9 @@
     </section>
     <section id="providers" aria-labelledby="providers-title">
       <h2 id="providers-title">6. Providers, website, and network information</h2>
-      <p>Supabase provides authentication, the database, and the app backend. Email delivery services send account confirmation and password-reset codes. DeepSeek processes submitted AI questions. GitHub Pages hosts this website. Network providers receive information such as your IP address needed to handle connections, and may process request times, browser or device information, and security logs to run, secure, and diagnose services.</p>
+      <p>Supabase provides authentication, the database, and the app backend. Email delivery services send account confirmation and password-reset codes. DeepSeek processes submitted AI questions. Google Play processes spark-pack payments and confirms purchases to our service. GitHub Pages hosts this website. Network providers receive information such as your IP address needed to handle connections, and may process request times, browser or device information, and security logs to run, secure, and diagnose services.</p>
       <p>The website sets no cookies of its own and stores nothing in your browser; the deletion request page only opens your email app with a prefilled message and sends nothing itself. The website adds no advertising or marketing tracking. The hosting platform may use its own security or access-control cookies. If you email us, email services process your address and the content you provide.</p>
-      <p>We do not sell personal information. We do not deliberately disclose your records except to providers delivering the service, recipients you choose when sharing, or where necessary for legal requirements or service security. Processing may occur outside your country. Provider information: <a href="https://supabase.com/privacy">Supabase</a> · <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek</a> · <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>.</p>
+      <p>We do not sell personal information. We do not deliberately disclose your records except to providers delivering the service, recipients you choose when sharing, or where necessary for legal requirements or service security. Processing may occur outside your country. Provider information: <a href="https://supabase.com/privacy">Supabase</a> · <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek</a> · <a href="https://policies.google.com/privacy">Google</a> · <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>.</p>
       <p>A provider’s policy for its own users may not cover data submitted through an API; this Little Sign policy and the applicable service agreements govern the corresponding processing.</p>
     </section>
     <section id="retention" aria-labelledby="retention-title">
@@ -82,6 +81,7 @@
         <li>Account records remain until you delete the account. Use Settings → Delete my account in the app, or email a request as described on the <a href="../delete-account/">account deletion page</a>. In-app deletion runs immediately after verification and confirmation; an email request is verified by the sending address and completed within 5 days of a verifiable request, with a confirmation reply. Both remove the account, linked sign-in records, per-account usage counts, and other linked records covered by the deployed data relationships. Signing out or clearing this device does not delete the account.</li>
         <li>Deleting an account from the app removes identifiable AI history belonging to that account on that device. Guest records, older unowned records, and other accounts’ records remain. An email deletion request does not erase device data, and in-app deletion does not clear other devices. Clear any remaining local data on each device separately.</li>
         <li>Usage counts reset on a request on a new day; successful request processing removes counts older than two calendar days. Cleanup is request-triggered, not a timed guarantee. Account deletion removes its count; the global count without account identifiers remains.</li>
+        <li>Spark balances, ledger entries, and purchase records remain until you delete the account and are removed with it. Google keeps its own order records under its policies; a refund that arrives after deletion changes nothing on our side.</li>
         <li>Reports of generated readings stay in the review queue until they are reviewed, and afterwards for as long as needed to keep a record of the action taken and to improve moderation. They are deleted with the account, whether deletion runs from the app or by email request.</li>
         <li>Provider logs, backups, and submitted AI text may remain under applicable agreements for security, abuse prevention, service operation, or legal obligations. Immediate account deletion does not guarantee erasure of those copies. Contact us below for the retention periods applicable to your request or deletion assistance. We create no new server account record to track deletion.</li>
       </ul>

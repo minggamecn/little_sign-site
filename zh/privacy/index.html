@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>隐私政策 | Little Sign</title>
   <meta name="description" content="本政策说明 Little Sign 应用和配套网站如何处理你的信息，以及你如何管理和删除信息。">
-  <!-- Draft policy: remove this tag when the operator name and effective date are final. -->
-  <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://minggamecn.github.io/little_sign-site/zh/privacy/">
   <link rel="alternate" hreflang="en" href="https://minggamecn.github.io/little_sign-site/privacy/">
   <link rel="alternate" hreflang="zh-CN" href="https://minggamecn.github.io/little_sign-site/zh/privacy/">
@@ -23,15 +21,14 @@
     <p class="eyebrow">政策与条款</p>
     <h1 id="page-title">隐私政策</h1>
     <p class="intro">本政策说明 Little Sign 应用和配套网站如何处理你的信息，以及你如何管理和删除信息。</p>
-    <p class="policy-date">更新日期：<time datetime="2026-09-25">2026-09-25</time></p>
-    <aside class="draft-notice" aria-label="草稿说明">草稿：运营者名称与生效日期尚待确认，服务商保留规则仍在核对中。</aside>
+    <p class="policy-date">生效日期：<time datetime="2026-09-26">2026-09-26</time> · 更新日期：<time datetime="2026-09-26">2026-09-26</time></p>
     </div>
     <nav class="contents" aria-label="本页目录">
       <h2>本页内容</h2>
       <ol>
         <li><a href="#operator">1. 运营者与联系</a></li>
         <li><a href="#device">2. 保存在设备上的内容</a></li>
-        <li><a href="#accounts">3. 邮箱账号与服务记录</a></li>
+        <li><a href="#accounts">3. 邮箱账号、星火与服务记录</a></li>
         <li><a href="#ai">4. 可选 AI 问题</a></li>
         <li><a href="#sharing">5. 分享、照片与设备权限</a></li>
         <li><a href="#providers">6. 服务商、网站与网络信息</a></li>
@@ -43,7 +40,7 @@
     <div class="document-body">
     <section id="operator" aria-labelledby="operator-title">
       <h2 id="operator-title">1. 运营者与联系</h2>
-      <p>Little Sign 的运营者为 [运营者名称 — 待填写]。</p>
+      <p>Little Sign 的运营者为 Ming Zhu（个人开发者），对本政策所述的处理负责。</p>
       <p>隐私问题、数据请求或疑似儿童数据，请联系：<a href="mailto:ming.life@foxmail.com">ming.life@foxmail.com</a>。</p>
     </section>
     <section id="device" aria-labelledby="device-title">
@@ -52,9 +49,11 @@
       <p>这些本地记录不会自动同步到我们的服务器。当前版本没有云端日记备份。我们不使用广告或分析 SDK 来上传这些记录。不要仅凭退出账号就认为设备数据已清除。</p>
     </section>
     <section id="accounts" aria-labelledby="accounts-title">
-      <h2 id="accounts-title">3. 邮箱账号与服务记录</h2>
+      <h2 id="accounts-title">3. 邮箱账号、星火与服务记录</h2>
       <p>当你注册或登录时，Supabase 及验证码邮件服务会处理你的邮箱、密码（仅由 Supabase 以哈希形式保存）、确认与重设密码的验证码、账号标识和登录会话，以验证身份并提供需要登录的功能。登录会话保存在设备上；密码和验证码不会保存到日记或设备中。</p>
       <p>我们在服务器保存与账号关联的 AI 请求日期和次数，以执行使用限制并控制滥用。这些计数不包含你的问题、答案或笔记。如果你在应用内举报某次生成的解读，该举报会与你的账号关联并保存在我们的服务上，详见第 4 节。</p>
+      <p>小签写的解读使用星火，这是一种与账号关联的解读点数。我们的服务保存你的星火余额，以及每次增减的账本：初始赠送、完成今日抽牌获得的每日星火、每次解读预扣和实际扣除的星火、购买的星火包和退款，每条记录包含数量和时间。领取每日星火时，应用会发送你的账号标识和抽牌当天的本地日期；不会发送你抽到的牌。解读请求会记录账号标识、数量和一个预扣标识。星火账本不会收到你的问题、卡牌或笔记。</p>
+      <p>如果星火包在售且你购买，付款由 Google Play 按 Google 自身的条款和隐私政策处理；我们不会收到你的支付卡信息。随后应用会把 Google Play 的购买凭证和商品标识发送给我们的服务，由服务向 Google 核实该笔购买，并检查其中是否带有应用在购买开始时设置的账号标识单向哈希值。我们会把购买凭证、Google 订单号、商品、星火数量和购买时间与你的账号一起保存，以确保每笔购买只到账一次，并在 Google 退款或作废时予以冲回。服务每天会读取 Google 提供的本应用已作废购买列表。这一切都不涉及你的问题、卡牌、笔记或邮箱。</p>
     </section>
     <section id="ai" aria-labelledby="ai-title">
       <h2 id="ai-title">4. 可选 AI 问题</h2>
@@ -70,9 +69,9 @@
     </section>
     <section id="providers" aria-labelledby="providers-title">
       <h2 id="providers-title">6. 服务商、网站与网络信息</h2>
-      <p>Supabase 提供身份验证、数据库和应用后端。邮件服务负责发送账号确认和重设密码的验证码。DeepSeek 处理你提交的 AI 问题。网站通过 GitHub Pages 托管。网络服务商会收到处理连接所需的 IP 地址等网络信息，并可能处理请求时间、浏览器或设备信息和安全日志，用于运行、保护和诊断服务。</p>
+      <p>Supabase 提供身份验证、数据库和应用后端。邮件服务负责发送账号确认和重设密码的验证码。DeepSeek 处理你提交的 AI 问题。Google Play 处理星火包的付款，并向我们的服务确认购买。网站通过 GitHub Pages 托管。网络服务商会收到处理连接所需的 IP 地址等网络信息，并可能处理请求时间、浏览器或设备信息和安全日志，用于运行、保护和诊断服务。</p>
       <p>网站本身不设置 Cookie，也不在浏览器中保存数据；删除申请页只会打开你的邮件应用并预填内容，网站不会自行发送任何信息。网站没有添加广告或营销跟踪。托管平台可能使用其自身的安全或访问控制 Cookie。通过邮件联系我们时，你的邮箱和所提供内容会由邮件服务处理。</p>
-      <p>我们不出售个人信息。除提供服务的服务商、你主动选择的分享接收方，以及法律要求或保护服务安全所必需的披露外，我们不会主动披露你的记录。处理可能发生在你所在国家以外。有关服务商的说明：<a href="https://supabase.com/privacy">Supabase</a> · <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek</a> · <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>。</p>
+      <p>我们不出售个人信息。除提供服务的服务商、你主动选择的分享接收方，以及法律要求或保护服务安全所必需的披露外，我们不会主动披露你的记录。处理可能发生在你所在国家以外。有关服务商的说明：<a href="https://supabase.com/privacy">Supabase</a> · <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek</a> · <a href="https://policies.google.com/privacy">Google</a> · <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>。</p>
       <p>服务商面向自身用户的隐私政策不一定覆盖通过 API 提交的数据；Little Sign 的本政策及适用的服务协议共同说明相应处理。</p>
     </section>
     <section id="retention" aria-labelledby="retention-title">
@@ -82,6 +81,7 @@
         <li>账号记录保留到你删除账号。你可以在应用设置中使用“删除账号”，或按照<a href="../delete-account/">删除账号页面</a>的说明通过邮件申请。应用内删除经验证和确认后立即执行；邮件申请以发件邮箱核实归属，我们在收到可核实请求后 5 天内完成并回信确认。两种方式都会删除账号、关联登录记录及每个账号的使用计数，并通过已部署的数据关系删除其他关联记录。退出登录或清除本机数据不会删除账号。</li>
         <li>从应用删除账号时，该设备上可识别为属于该账号的 AI 历史会被删除。访客记录、旧版未归属记录和其他账号记录保留。邮件申请删除不会清除设备数据，应用内删除也不会清除其他设备。请在每台设备上分别清除剩余的本地数据。</li>
         <li>使用计数在新一天请求时重置；成功处理请求时会清理超过两个日历日的旧计数。此清理由请求触发，并非定时保证。删除账号会移除其计数；不包含账号标识的全局计数保留。</li>
+        <li>星火余额、账本记录和购买记录保留到你删除账号，并随账号一起删除。Google 会按其政策保留自己的订单记录；删除账号之后到达的退款不会改变我们这边的任何内容。</li>
         <li>对生成解读的举报会保留在审核队列中直到审核完成，之后在记录处理措施和改进审核所需的期间内继续保留。无论通过应用还是邮件申请删除账号，举报记录都会一并删除。</li>
         <li>服务商日志、备份及已发送的 AI 文本可能按适用协议继续保留，用于安全、滥用防护、服务运行或法律义务。即时账号删除不保证抹除这些副本。有关适用于你请求的保留期限或删除协助，请联系下方邮箱。我们不为追踪删除而创建新的服务器账号记录。</li>
       </ul>
